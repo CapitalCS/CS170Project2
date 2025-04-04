@@ -1,3 +1,17 @@
 #!/bin/bash
 read -p "Please enter a number" num
 echo "Hello World!, $num"
+
+case $num in
+    1-5)
+	echo "You are too young"
+	;;
+    6-12)
+	echo "You are in $((num-5)) grade"
+	;;
+    *)
+    	echo "You are at least in high school"
+	;;
+esac
+
+
